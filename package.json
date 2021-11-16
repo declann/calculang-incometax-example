@@ -6,9 +6,13 @@
   "repository": "https://github.com/declann/calculang-example-repl-repo.git",
   "author": "Declan Naughton working for DCN Consulting",
   "scripts": {
-    "build": "cul-js compile ./src/incometax.cul.js"
+    "build": "cul-js compile ./src/incometax.cul.js",
+    "run": "node ./src/run-incometax.js > ./src/run-incometax.out"
   },
   "dependencies": {
     "@calculang/calculang-js": "^0.1.0-alpha.3"
+  },
+  "devDependencies": {
+    "date-fns": "^2.25.0"
   }
 }
