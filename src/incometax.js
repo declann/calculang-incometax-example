@@ -114,7 +114,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "net_salary", function() { return net_salary; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "net_salary_ytd", function() { return net_salary_ytd; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "income_tax_ytd", function() { return income_tax_ytd; });
-/* harmony import */ var date_fns_esm_addMonths__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var date_fns_esm_addMonths__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var _usc_cul_js_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "usc_co_1_ytd", function() { return _usc_cul_js_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
@@ -340,6 +340,8 @@ const income_tax_ytd = ({
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return usc_liab_ytd; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return usc_liab; });
 /* harmony import */ var _incometax_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var date_fns_esm_addMonths__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+
 
 
 
@@ -444,7 +446,7 @@ const usc_liab = ({
     t_in
   }) - usc_liab_ytd({
     annual_salary_in,
-    t_in: addMonths(Object(_incometax_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({
+    t_in: Object(date_fns_esm_addMonths__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Object(_incometax_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({
       t_in
     }), -1)
   });
@@ -455,22 +457,10 @@ const usc_liab = ({
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return requiredArgs; });
-function requiredArgs(required, args) {
-  if (args.length < required) {
-    throw new TypeError(required + ' argument' + (required > 1 ? 's' : '') + ' required, but only ' + args.length + ' present');
-  }
-}
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return addMonths; });
 /* harmony import */ var _lib_toInteger_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
 /* harmony import */ var _toDate_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
-/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 
 
 
@@ -542,12 +532,24 @@ function addMonths(dirtyDate, dirtyAmount) {
 }
 
 /***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return requiredArgs; });
+function requiredArgs(required, args) {
+  if (args.length < required) {
+    throw new TypeError(required + ' argument' + (required > 1 ? 's' : '') + ' required, but only ' + args.length + ' present');
+  }
+}
+
+/***/ }),
 /* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return toDate; });
-/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _lib_requiredArgs_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
 
 /**
  * @name toDate
