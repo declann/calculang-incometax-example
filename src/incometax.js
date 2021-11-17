@@ -137,7 +137,8 @@ const annual_salary = ({
 }) => annual_salary_in;
 const addl_credit = ({
   addl_credit_in
-}) => addl_credit_in;
+}) => addl_credit_in; // this was just messing with a temp. param
+
 const t = ({
   t_in
 }) => t_in;
