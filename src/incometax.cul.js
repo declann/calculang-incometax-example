@@ -14,7 +14,7 @@ export { usc_co_1_ytd, usc_co_2_ytd, usc_co_3_ytd, usc_liab, usc_liab_ytd };
 
 // explicit inputs:
 export const annual_salary = () => annual_salary_in;
-export const addl_credit = () => addl_credit_in;
+export const addl_credit = () => addl_credit_in; // this was just messing with a temp. param
 export const t = () => t_in;
 
 export const gross_salary = () => {
